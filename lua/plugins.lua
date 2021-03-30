@@ -16,8 +16,15 @@ end
 -- auto compile when there are changes to this file
 execute "autocmd BufWritePost plugins.lua PackerCompile"
 
-require('packer').startup(function(use)
+require("packer").startup(function(use)
     -- packer can manage itself as an optional plugin
     use "wbthomason/packer.nvim"
+
+    -- Treesitter
+    use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
+
+    -- Colors
+    use "christianchiarulli/nvcode-color-schemes.vim"
+
 end)
 
