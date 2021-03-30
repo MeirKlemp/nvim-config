@@ -1,3 +1,5 @@
+vim.cmd "set shortmess+=c"      -- don't pass messages to ins-completion-menu
+vim.o.hidden = true             -- set buffers hidden instead of unloaded when abandoned
 vim.wo.wrap = true              -- set word wrapping
 vim.o.termguicolors = true      -- set terminal gui colors
 vim.o.t_Co = "256"              -- support 256 colors

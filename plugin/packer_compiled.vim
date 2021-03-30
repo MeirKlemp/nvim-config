@@ -32,9 +32,17 @@ local function try_loadstring(s, component, name)
 end
 
 _G.packer_plugins = {
-  ["nvcode-color-shcemes.vim"] = {
+  ["nvcode-color-schemes.vim"] = {
     loaded = true,
-    path = "/home/meir/.local/share/nvim/site/pack/packer/start/nvcode-color-shcemes.vim"
+    path = "/home/meir/.local/share/nvim/site/pack/packer/start/nvcode-color-schemes.vim"
+  },
+  ["nvim-compe"] = {
+    loaded = true,
+    path = "/home/meir/.local/share/nvim/site/pack/packer/start/nvim-compe"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/home/meir/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
     loaded = true,

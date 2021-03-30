@@ -20,10 +20,18 @@ require("packer").startup(function(use)
     -- packer can manage itself as an optional plugin
     use "wbthomason/packer.nvim"
 
-    -- Treesitter
+    -- LSP
+    use "neovim/nvim-lspconfig"
+
+    -- autocomplete
+    use "hrsh7th/nvim-compe"
+    use "hrsh7th/vim-vsnip"
+    use "rafamadriz/friendly-snippets"
+
+    -- treesitter
     use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
 
-    -- Colors
+    -- colors
     use "christianchiarulli/nvcode-color-schemes.vim"
 
 end)
