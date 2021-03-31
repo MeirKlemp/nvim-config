@@ -21,8 +21,9 @@ require"compe".setup {
 	nvim_lsp = true,
 	nvim_lua = true,
 	spell = true,
-	tags = false,
 	vsnip = true,
+
+	tags = false,
     }
 }
 
@@ -60,16 +61,15 @@ _G.s_tab_complete = function()
     end
 end
 
-_G.enter_complete = function()
-    if vim.fn.pumvisible() == 1 and vim.fn.complete_info()["selected"] ~= -1 then
-	return vim.fn["compe#confirm"]("<CR>")
-    else
-	return t "<CR>"
-    end
-end
+local keymap = vim.api.nvim_set_keymap
 
-vim.api.nvim_set_keymap('i', "<CR>", "v:lua.enter_complete()", {expr = true})
-vim.api.nvim_set_keymap('i', "<Tab>", "v:lua.tab_complete()", {expr = true})
-vim.api.nvim_set_keymap('s', "<Tab>", "v:lua.tab_complete()", {expr = true})
-vim.api.nvim_set_keymap('i', "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
-vim.api.nvim_set_keymap('s', "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
+keymap('i', "<Tab>", "v:lua.tab_complete()", {expr = true})
+keymap('s', "<Tab>", "v:lua.tab_complete()", {expr = true})
+keymap('i', "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
+keymap('s', "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
+
+keymap('i', "<C-Space>", "compe#complete()", {expr = true})
+keymap('i', "<CR>", "compe#confirm('<CR>')", {expr = true})
+keymap('i', "<C-e>", "compe#close('<C-e>')", {expr = true})
+keymap('i', "<C-f>", "compe#scroll({'delta' : +4})", {expr = true})
+keymap('i', "<C-d>", "compe#scroll({'delta' : -4})", {expr = true})
