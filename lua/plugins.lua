@@ -34,5 +34,11 @@ require("packer").startup(function(use)
     -- colors
     use "christianchiarulli/nvcode-color-schemes.vim"
 
+    -- icons
+    use "kyazdani42/nvim-web-devicons"
+
+    -- statusline
+    use "glepnir/galaxyline.nvim"
+
 end)
 

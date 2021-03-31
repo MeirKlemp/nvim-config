@@ -13,5 +13,7 @@ vim.wo.number = true            -- show line numbers
 vim.wo.relativenumber = true    -- show line numbers as a relative to current line
 vim.wo.cursorline = true        -- highlight the current line
 vim.wo.signcolumn = "yes"       -- force to show the signcolumn
+vim.o.showmode = false		-- hide the mode, the status-line is showing the mode
 vim.o.updatetime = 500          -- faster compelation
 -- vim.o.timeoutlen = 250          -- wait 250ms before executing the current typed key
+vim.o.guifont = "JetBrainsMono\\ Nerd\\ Font\\ Mono:h18"

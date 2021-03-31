@@ -7,4 +7,4 @@ require "colorscheme"
 -- plugins' configurations
 require "nvim-treesitter"
 require "nvim-compe"
-
+require "nvim-galaxyline"
