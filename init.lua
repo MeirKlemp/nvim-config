@@ -2,9 +2,7 @@
 require "plugins"
 require "settings"
 require "keymapping"
-
--- set color scheme to dark+
-vim.cmd "colorscheme nvcode"
+require "colorscheme"
 
 -- plugins' configurations
 require "nvim-treesitter"
