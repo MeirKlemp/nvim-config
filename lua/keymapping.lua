@@ -1,5 +1,8 @@
 local keymap = vim.api.nvim_set_keymap
 
+-- setting the leader key to space
+vim.g.mapleader = ' '
+
 -- make indenting in visual mode and select mode with "<,>" not to return to normal mode
 keymap('v', '<', '<gv', {noremap = true, silent = true})
 keymap('v', '>', '>gv', {noremap = true, silent = true})

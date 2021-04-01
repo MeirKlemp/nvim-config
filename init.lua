@@ -5,10 +5,11 @@ require "keymapping"
 require "colorscheme"
 
 -- plugins' configurations
-require "nvim-treesitter"
-require "nvim-compe"
-require "nvim-galaxyline"
-require "nvim-gitsigns"
+require "nv-treesitter"
+require "nv-compe"
+require "nv-galaxyline"
+require "nv-gitsigns"
+require "nv-tree"
 
 -- lsp
 require "lsp"

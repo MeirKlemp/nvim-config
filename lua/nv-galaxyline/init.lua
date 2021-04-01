@@ -68,7 +68,7 @@ local gl = require"galaxyline"
 local sec = gl.section
 local condition = require"galaxyline.condition"
 
-gl.short_line_list = {"packer"}
+gl.short_line_list = {"packer", "NvimTree"}
 
 ---------------
 -- Left Side --
@@ -213,9 +213,8 @@ sec.right[5] = {
         condition = function()
             local tbl = {["dashboard"] = true, [" "] = true}
             if tbl[vim.bo.filetype] then return false end
-            return true
+            return condition.hide_in_width()
         end,
-	condition = condition.hide_in_width,
         icon = ' ',
         highlight = {colors.grey, colors.bg},
     }

@@ -40,6 +40,9 @@ require("packer").startup(function(use)
     -- statusline
     use "glepnir/galaxyline.nvim"
 
+    -- file system
+    use "kyazdani42/nvim-tree.lua"
+
     -- git
     use {"lewis6991/gitsigns.nvim", requires = {"nvim-lua/plenary.nvim"}}
     use "tpope/vim-fugitive"
