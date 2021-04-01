@@ -10,3 +10,7 @@ require "nvim-compe"
 require "nvim-galaxyline"
 require "nvim-gitsigns"
 
+-- lsp
+require "lsp"
+require "lsp.lua-sumneko"
+
