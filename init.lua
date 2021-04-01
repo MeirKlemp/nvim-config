@@ -8,3 +8,5 @@ require "colorscheme"
 require "nvim-treesitter"
 require "nvim-compe"
 require "nvim-galaxyline"
+require "nvim-gitsigns"
+
