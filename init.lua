@@ -14,4 +14,5 @@ require "nvim-gitsigns"
 require "lsp"
 require "lsp.lua-sumneko"
 require "lsp.rust-analyzer"
-
+require "lsp.c-cpp-clangd"
+require "lsp.cmake-regen100"
