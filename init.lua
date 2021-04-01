@@ -13,4 +13,5 @@ require "nvim-gitsigns"
 -- lsp
 require "lsp"
 require "lsp.lua-sumneko"
+require "lsp.rust-analyzer"
 
