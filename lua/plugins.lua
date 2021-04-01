@@ -42,6 +42,8 @@ require("packer").startup(function(use)
 
     -- git
     use {"lewis6991/gitsigns.nvim", requires = {"nvim-lua/plenary.nvim"}}
+    use "tpope/vim-fugitive"
+    use "tpope/vim-rhubarb"
 
 end)
 
