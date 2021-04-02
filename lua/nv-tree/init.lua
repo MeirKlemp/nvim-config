@@ -1,5 +1,6 @@
 -- settings
 vim.g.nvim_tree_indent_markers = 1
+vim.g.nvim_tree_auto_close = 1
 
 -- keymapping inside the tree
 local tree_cb = require"nvim-tree.config".nvim_tree_callback
@@ -32,7 +33,7 @@ vim.g.nvim_tree_bindings = {
 }
 
 -- keymapping outside the tree
-vim.api.nvim_set_keymap('n', "<leader>f", ":NvimTreeToggle<CR>", {noremap = true})
+vim.api.nvim_set_keymap('n', "<leader>t", ":NvimTreeToggle<CR>", {noremap = true})
 
 -- icons
 vim.g.nvim_tree_icons = {

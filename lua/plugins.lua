@@ -22,6 +22,7 @@ require("packer").startup(function(use)
 
     -- LSP
     use "neovim/nvim-lspconfig"
+    use "glepnir/lspsaga.nvim"
 
     -- autocomplete
     use "hrsh7th/nvim-compe"
@@ -30,6 +31,12 @@ require("packer").startup(function(use)
 
     -- treesitter
     use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
+    use {'lukas-reineke/indent-blankline.nvim', branch = 'lua'}
+
+    -- commenting
+    use "tpope/vim-commentary"
+    -- TODO: learn how to use this plugin
+    -- use "JoosepAlviste/nvim-ts-context-commentstring"
 
     -- colors
     use "christianchiarulli/nvcode-color-schemes.vim"

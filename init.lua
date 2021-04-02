@@ -6,6 +6,7 @@ require "colorscheme"
 
 -- plugins' configurations
 require "nv-treesitter"
+require "nv-indentline"
 require "nv-compe"
 require "nv-galaxyline"
 require "nv-gitsigns"
