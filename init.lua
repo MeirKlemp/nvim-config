@@ -18,3 +18,7 @@ require "lsp.lua-sumneko"
 require "lsp.rust-analyzer"
 require "lsp.c-cpp-clangd"
 require "lsp.cmake-regen100"
+
+-- debugger
+require "nv-dap"
+require "nv-dap.c-cpp-rust"

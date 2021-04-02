@@ -24,6 +24,9 @@ require("packer").startup(function(use)
     use "neovim/nvim-lspconfig"
     use "glepnir/lspsaga.nvim"
 
+    -- debugger
+    use "mfussenegger/nvim-dap"
+
     -- autocomplete
     use "hrsh7th/nvim-compe"
     use "hrsh7th/vim-vsnip"
