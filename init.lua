@@ -11,6 +11,7 @@ require "nv-compe"
 require "nv-galaxyline"
 require "nv-gitsigns"
 require "nv-tree"
+require "nv-commentary"
 
 -- lsp
 require "lsp"
