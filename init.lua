@@ -12,6 +12,7 @@ require "nv-galaxyline"
 require "nv-gitsigns"
 require "nv-tree"
 require "nv-commentary"
+require "nv-telescope"
 
 -- lsp
 require "lsp"
