@@ -20,6 +20,7 @@ require "lsp.lua-sumneko"
 require "lsp.rust-analyzer"
 require "lsp.c-cpp-clangd"
 require "lsp.cmake-regen100"
+require "lsp.pyright"
 
 -- debugger
 require "nv-dap"

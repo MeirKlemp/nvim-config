@@ -49,19 +49,22 @@ end
 
 local get_mode_alias = function()
     local mode_alias = {
-        n = 'NORMAL',
-        i = 'INSERT',
-        c = 'COMMAND',
-        V = 'VISUAL',
-        [''] = 'VISUAL',
-        v = 'VISUAL',
-        R = 'REPLACE',
+        n = "NORMAL",
+        i = "INSERT",
+        c = "COMMAND",
+        V = "VISUAL",
+        [''] = "VISUAL",
+        v = "VISUAL",
+        R = "REPLACE",
 	s = "SELECT",
 	S = "SELECT",
 	t = "TERMINAL",
     }
 
-    return mode_alias[vim.fn.mode()]
+    local result = mode_alias[vim.fn.mode()]
+    if result then return result end
+
+    return "NVIM"
 end
 
 local gl = require"galaxyline"
