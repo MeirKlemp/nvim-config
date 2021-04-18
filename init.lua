@@ -25,3 +25,4 @@ require "lsp.pyright"
 -- debugger
 require "nv-dap"
 require "nv-dap.c-cpp-rust"
+require "nv-dap.python"
