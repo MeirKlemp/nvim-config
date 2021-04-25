@@ -13,6 +13,7 @@ require "nv-gitsigns"
 require "nv-tree"
 require "nv-commentary"
 require "nv-telescope"
+require "nv-flutter"
 
 -- lsp
 require "lsp"

@@ -20,6 +20,9 @@ require("packer").startup(function(use)
     -- packer can manage itself as an optional plugin
     use "wbthomason/packer.nvim"
 
+    -- reload init.lua
+    use "famiu/nvim-reload"
+
     -- LSP
     use "neovim/nvim-lspconfig"
     use "glepnir/lspsaga.nvim"
@@ -66,5 +69,8 @@ require("packer").startup(function(use)
             "nvim-lua/popup.nvim"
         }
     }
+
+    -- flutter
+    use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'}
 end)
 
