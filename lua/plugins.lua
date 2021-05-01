@@ -37,7 +37,8 @@ require("packer").startup(function(use)
 
     -- treesitter
     use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
-    use {'lukas-reineke/indent-blankline.nvim', branch = 'lua'}
+    -- NOTE: this plugin sometimes highlights empty rows and it is annoying...
+    -- use {'lukas-reineke/indent-blankline.nvim', branch = 'lua'}
 
     -- commenting
     use "tpope/vim-commentary"
