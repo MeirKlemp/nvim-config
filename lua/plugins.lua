@@ -29,6 +29,7 @@ require("packer").startup(function(use)
 
     -- debugger
     use "mfussenegger/nvim-dap"
+    use "mfussenegger/nvim-dap-python"
 
     -- autocomplete
     use "hrsh7th/nvim-compe"
