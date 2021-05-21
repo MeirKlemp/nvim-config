@@ -47,7 +47,8 @@ require("packer").startup(function(use)
     -- use "JoosepAlviste/nvim-ts-context-commentstring"
 
     -- colors
-    use "christianchiarulli/nvcode-color-schemes.vim"
+    -- use "christianchiarulli/nvcode-color-schemes.vim"
+    use {"npxbr/gruvbox.nvim", requires = {"rktjmp/lush.nvim"}}
 
     -- icons
     use "kyazdani42/nvim-web-devicons"

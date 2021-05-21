@@ -1,6 +1,9 @@
 
 -- set color scheme to dark+
-vim.cmd "colorscheme nvcode"
+-- vim.cmd "colorscheme nvcode"
+
+vim.o.background = "dark"
+vim.cmd "colorscheme gruvbox"
 
 -- remove statusline backgournd
 vim.cmd "highlight StatusLine ctermbg=none guibg=none"
