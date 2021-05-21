@@ -23,7 +23,8 @@ keymap('n', '<C-p>', ":Lspsaga diagnostic_jump_prev<CR>", options)
 keymap('n', '<C-n>', ":Lspsaga diagnostic_jump_next<CR>", options)
 keymap('n', '<C-d>', "<cmd>lua require'lspsaga.action'.smart_scroll_with_saga(-1)<CR>", options)
 keymap('n', '<C-f>', "<cmd>lua require'lspsaga.action'.smart_scroll_with_saga(1)<CR>", options)
-keymap('n', '<leader>f', "<cmd>lua vim.lsp.buf.formatting()<CR>", options)
+keymap('n', '<M-F>', "<cmd>lua vim.lsp.buf.formatting()<CR>", options)
+keymap('i', '<M-F>', "<cmd>lua vim.lsp.buf.formatting()<CR>", options)
 
 local lsp_config = {}
 lsp_config.common_on_attach = function (client, bufnr) end
