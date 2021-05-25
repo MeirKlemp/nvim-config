@@ -55,6 +55,7 @@ require("packer").startup(function(use)
 
     -- statusline
     use "glepnir/galaxyline.nvim"
+    use "mkitt/tabline.vim"
 
     -- file system
     use "kyazdani42/nvim-tree.lua"
